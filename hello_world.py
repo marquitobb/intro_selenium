@@ -6,7 +6,10 @@ class HelloWorld(unittest.TestCase):
 
     @classmethod
     def setUp(cls):
-        cls.driver = webdriver.Chrome(executable_path=r'C:\Users\Marco\Desktop\working_win\Python\Selenium\chromedriver.exe')
+        # windows
+        # cls.driver = webdriver.Chrome(executable_path=r'C:\Users\Marco\Desktop\working_win\Python\Selenium\chromedriver.exe')
+        # mac os
+        cls.driver = webdriver.Chrome(executable_path='./extension_mac/chromedriver')
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 
