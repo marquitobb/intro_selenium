@@ -7,9 +7,9 @@ class AssertionsTest(unittest.TestCase):
 
     def setUp(cls) -> None:
         # windows
-        # cls.driver = webdriver.Chrome(executable_path=r'C:\Users\Marco\Desktop\working_win\Python\Selenium\chromedriver.exe')
+        cls.driver = webdriver.Chrome(executable_path=r'C:\Users\Marco\Desktop\working_win\Python\Selenium\extension_win\chromedriver.exe')
         # mac os
-        cls.driver = webdriver.Chrome(executable_path='./extension_mac/chromedriver')
+        # cls.driver = webdriver.Chrome(executable_path='./extension_mac/chromedriver')
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
         cls.driver.get('http://demo-store.seleniumacademy.com/')

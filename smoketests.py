@@ -6,7 +6,7 @@ from search_test import SearchTests
 assert_test = TestLoader().loadTestsFromTestCase(AssertionsTest)
 search_test = TestLoader().loadTestsFromTestCase(SearchTests)
 
-smoke_test = TestSuite([assert_test,search_test])
+smoke_test = TestSuite([assert_test])
 
 kwargs = {
     'output': 'smoke-repot',

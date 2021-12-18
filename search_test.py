@@ -5,9 +5,9 @@ class SearchTests(unittest.TestCase):
 
     def setUp(self):
         # windows
-        # self.driver = webdriver.Chrome(executable_path=r'C:\Users\Marco\Desktop\working_win\Python\Selenium\chromedriver.exe')
+        cls.driver = webdriver.Chrome(executable_path=r'C:\Users\Marco\Desktop\working_win\Python\Selenium\extension_win\chromedriver.exe')
         # mac os
-        self.driver = webdriver.Chrome(executable_path='./extension_mac/chromedriver')
+        # self.driver = webdriver.Chrome(executable_path='./extension_mac/chromedriver')
         driver = self.driver
         driver.get('http://demo-store.seleniumacademy.com/')
         driver.maximize_window()
