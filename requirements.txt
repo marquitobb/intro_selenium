@@ -1,2 +1,3 @@
 pyunitreport
 selenium
+ddt
